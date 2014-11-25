@@ -1,0 +1,259 @@
+
+game.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Button
+  rotate: false
+  xy: 966, 698
+  size: 20, 20
+  orig: 20, 20
+  offset: 0, 0
+  index: -1
+ButtonChecked
+  rotate: false
+  xy: 2, 2
+  size: 20, 20
+  orig: 20, 20
+  offset: 0, 0
+  index: -1
+ButtonDisabled
+  rotate: false
+  xy: 236, 238
+  size: 20, 20
+  orig: 20, 20
+  offset: 0, 0
+  index: -1
+ButtonDown
+  rotate: false
+  xy: 484, 342
+  size: 20, 20
+  orig: 20, 20
+  offset: 0, 0
+  index: -1
+Cage-1
+  rotate: false
+  xy: 2, 208
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+Cage-2
+  rotate: false
+  xy: 484, 530
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+Cage-3
+  rotate: false
+  xy: 966, 852
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+Cage-4
+  rotate: false
+  xy: 2, 156
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+Enemy-1
+  rotate: false
+  xy: 484, 364
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Enemy-2
+  rotate: false
+  xy: 668, 548
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+GameBG
+  rotate: false
+  xy: 2, 582
+  size: 480, 320
+  orig: 480, 320
+  offset: 0, 0
+  index: -1
+Heart
+  rotate: false
+  xy: 702, 560
+  size: 20, 20
+  orig: 20, 20
+  offset: 0, 0
+  index: -1
+HeartEmpty
+  rotate: false
+  xy: 966, 676
+  size: 20, 20
+  orig: 20, 20
+  offset: 0, 0
+  index: -1
+Hero-stand-d-1
+  rotate: false
+  xy: 484, 486
+  size: 42, 42
+  orig: 42, 42
+  offset: 0, 0
+  index: -1
+Hero-walk-d-1
+  rotate: false
+  xy: 484, 486
+  size: 42, 42
+  orig: 42, 42
+  offset: 0, 0
+  index: -1
+Hero-stand-l-1
+  rotate: false
+  xy: 536, 538
+  size: 42, 42
+  orig: 42, 42
+  offset: 0, 0
+  index: -1
+Hero-walk-l-1
+  rotate: false
+  xy: 536, 538
+  size: 42, 42
+  orig: 42, 42
+  offset: 0, 0
+  index: -1
+Hero-stand-r-1
+  rotate: false
+  xy: 966, 808
+  size: 42, 42
+  orig: 42, 42
+  offset: 0, 0
+  index: -1
+Hero-walk-r-1
+  rotate: false
+  xy: 966, 808
+  size: 42, 42
+  orig: 42, 42
+  offset: 0, 0
+  index: -1
+Hero-stand-u-1
+  rotate: false
+  xy: 2, 112
+  size: 42, 42
+  orig: 42, 42
+  offset: 0, 0
+  index: -1
+Hero-walk-u-1
+  rotate: false
+  xy: 2, 112
+  size: 42, 42
+  orig: 42, 42
+  offset: 0, 0
+  index: -1
+Hero-swing-d-1
+  rotate: false
+  xy: 54, 166
+  size: 42, 42
+  orig: 42, 42
+  offset: 0, 0
+  index: -1
+Hero-swing-d-2
+  rotate: false
+  xy: 104, 216
+  size: 42, 42
+  orig: 42, 42
+  offset: 0, 0
+  index: -1
+Hero-swing-l-1
+  rotate: false
+  xy: 484, 442
+  size: 42, 42
+  orig: 42, 42
+  offset: 0, 0
+  index: -1
+Hero-swing-l-2
+  rotate: false
+  xy: 580, 538
+  size: 42, 42
+  orig: 42, 42
+  offset: 0, 0
+  index: -1
+Hero-swing-r-1
+  rotate: false
+  xy: 966, 764
+  size: 42, 42
+  orig: 42, 42
+  offset: 0, 0
+  index: -1
+Hero-swing-r-2
+  rotate: false
+  xy: 2, 68
+  size: 42, 42
+  orig: 42, 42
+  offset: 0, 0
+  index: -1
+Hero-swing-u-1
+  rotate: false
+  xy: 148, 216
+  size: 42, 42
+  orig: 42, 42
+  offset: 0, 0
+  index: -1
+Hero-swing-u-2
+  rotate: false
+  xy: 484, 398
+  size: 42, 42
+  orig: 42, 42
+  offset: 0, 0
+  index: -1
+Hero-walk-d-2
+  rotate: false
+  xy: 624, 538
+  size: 42, 42
+  orig: 42, 42
+  offset: 0, 0
+  index: -1
+Hero-walk-l-2
+  rotate: false
+  xy: 966, 720
+  size: 42, 42
+  orig: 42, 42
+  offset: 0, 0
+  index: -1
+Hero-walk-r-2
+  rotate: false
+  xy: 2, 24
+  size: 42, 42
+  orig: 42, 42
+  offset: 0, 0
+  index: -1
+Hero-walk-u-2
+  rotate: false
+  xy: 192, 216
+  size: 42, 42
+  orig: 42, 42
+  offset: 0, 0
+  index: -1
+HighScore
+  rotate: false
+  xy: 2, 260
+  size: 480, 320
+  orig: 480, 320
+  offset: 0, 0
+  index: -1
+TextBox
+  rotate: false
+  xy: 54, 210
+  size: 48, 48
+  split: 23, 24, 20, 27
+  pad: 10, 9, 9, 10
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+TitleScreen
+  rotate: false
+  xy: 484, 582
+  size: 480, 320
+  orig: 480, 320
+  offset: 0, 0
+  index: -1
