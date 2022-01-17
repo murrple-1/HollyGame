@@ -1,20 +1,20 @@
 {
-	com.badlogic.gdx.graphics.g2d.BitmapFont: { 
-		default-font: { file: default.fnt } 
+	"com.badlogic.gdx.graphics.g2d.BitmapFont": {
+		"default-font": { "file": "default.fnt" }
 	},
-	com.badlogic.gdx.graphics.Color: {
-			green: { a: 1, b: 0, g: 1, r: 0 },
-			white: { a: 1, b: 1, g: 1, r: 1 },
-			red: { a: 1, b: 0, g: 0, r: 1 },
-			black: { a: 1, b: 0, g: 0, r: 0 }
+	"com.badlogic.gdx.graphics.Color": {
+			"green": { "a": 1, "b": 0, "g": 1, "r": 0 },
+			"white": { "a": 1, "b": 1, "g": 1, "r": 1 },
+			"red": { "a": 1, "b": 0, "g": 0, "r": 1 },
+			"black": { "a": 1, "b": 0, "g": 0, "r": 0 }
 	},
-	com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle: {
-			default: { font: default-font, fontColor: white }
+	"com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle": {
+			"default": { "font": "default-font", "fontColor": "white" }
 	},
-	com.badlogic.gdx.scenes.scene2d.ui.ImageTextButton$ImageTextButtonStyle: {
-		default: { font: default-font, imageUp: Button, imageDown: ButtonDown, imageOver: Button, imageChecked: ButtonChecked, imageCheckedOver: ButtonChecked, imageDisabled: ButtonDisabled }
+	"com.badlogic.gdx.scenes.scene2d.ui.ImageTextButton$ImageTextButtonStyle": {
+		"default": { "font": "default-font", "imageUp": "Button", "imageDown": "ButtonDown", "imageOver": "Button", "imageChecked": "ButtonChecked", "imageCheckedOver": "ButtonChecked", "imageDisabled": "ButtonDisabled" }
 	},
-	com.badlogic.gdx.scenes.scene2d.ui.TextField$TextFieldStyle: {
-		default: { font: default-font, fontColor: white, background: TextBox }
+	"com.badlogic.gdx.scenes.scene2d.ui.TextField$TextFieldStyle": {
+		"default": { "font": "default-font", "fontColor": "white", "background": "TextBox" }
 	}
 }
