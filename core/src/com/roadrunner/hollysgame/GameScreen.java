@@ -61,7 +61,6 @@ public class GameScreen implements Screen {
 		music = Gdx.audio.newMusic(Gdx.files.internal("game.mp3"));
 		music.setLooping(true);
 		music.setVolume(0.5f);
-		music.play();
 		
 		for(int i = 0; i < swordSounds.length; i++) {
 			swordSounds[i] = Gdx.audio.newSound(Gdx.files.internal("swing-" + (i + 1) + ".mp3"));
@@ -154,7 +153,6 @@ public class GameScreen implements Screen {
 	
 	public long getPlayTime() {
 		return playTime;
-		
 	}
 	
 	public Music getMusic() {
@@ -327,7 +325,6 @@ public class GameScreen implements Screen {
 			int escapeIndex = keyToIndex(Keys.ESCAPE);
 			if(previousKeys != null && previousKeys[escapeIndex] && !currentKeys[escapeIndex]) {
 				screen.getGame().setScreen(new MainMenuScreen(screen.getGame()));
-				screen.music.stop();
 				return;
 			}
 			
@@ -362,22 +359,22 @@ public class GameScreen implements Screen {
 
 	@Override
 	public void show() {
-		// do nothing
+		music.play();
 	}
 
 	@Override
 	public void hide() {
-		// do nothing
+		music.stop();
 	}
 
 	@Override
 	public void pause() {
-		// do nothing
+		music.pause();
 	}
 
 	@Override
 	public void resume() {
-		// do nothing
+		music.play();
 	}
 
 	@Override

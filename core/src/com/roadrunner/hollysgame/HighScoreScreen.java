@@ -33,7 +33,6 @@ public class HighScoreScreen implements Screen {
 		music = Gdx.audio.newMusic(Gdx.files.internal("game_over.mp3"));
 		music.setLooping(true);
 		music.setVolume(0.3f);
-		music.play();
 		
 		TextureAtlas atlas = this.game.getSkin().getAtlas();
 
@@ -89,7 +88,6 @@ public class HighScoreScreen implements Screen {
 		
 		@Override
 		public void clicked(InputEvent event, float x, float y) {
-			screen.music.stop();
 			screen.game.setScreen(new GameScreen(screen.game));
 		}
 	}
@@ -103,7 +101,6 @@ public class HighScoreScreen implements Screen {
 		
 		@Override
 		public void clicked(InputEvent event, float x, float y) {
-			screen.music.stop();
 			screen.game.setScreen(new MainMenuScreen(screen.game));
 		}
 	}
@@ -130,22 +127,22 @@ public class HighScoreScreen implements Screen {
 
 	@Override
 	public void show() {
-		// do nothing
+		music.play();
 	}
 
 	@Override
 	public void hide() {
-		// do nothing
+		music.stop();
 	}
 
 	@Override
 	public void pause() {
-		// do nothing
+		music.pause();
 	}
 
 	@Override
 	public void resume() {
-		// do nothing
+		music.play();
 	}
 
 	@Override

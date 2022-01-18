@@ -29,7 +29,6 @@ public class MainMenuScreen implements Screen {
 		music = Gdx.audio.newMusic(Gdx.files.internal("menu.mp3"));
 		music.setLooping(true);
 		music.setVolume(0.05f);
-		music.play();
 		
 		Image backgroundImage = new Image(this.game.getSkin().getAtlas().findRegion("TitleScreen"));
 		stage.addActor(backgroundImage);
@@ -63,7 +62,6 @@ public class MainMenuScreen implements Screen {
 		
 		@Override
 		public void clicked(InputEvent event, float x, float y) {
-			screen.music.stop();
 			screen.game.setScreen(new GameScreen(screen.game));
 		}
 	}
@@ -77,7 +75,6 @@ public class MainMenuScreen implements Screen {
 		
 		@Override
 		public void clicked(InputEvent event, float x, float y) {
-			screen.music.stop();
 			screen.game.setScreen(new HighScoreScreen(screen.game, false, true));
 		}
 	}
@@ -120,22 +117,22 @@ public class MainMenuScreen implements Screen {
 
 	@Override
 	public void show() {
-		// do nothing
+		music.play();
 	}
 
 	@Override
 	public void hide() {
-		// do nothing
+		music.stop();
 	}
 
 	@Override
 	public void pause() {
-		// do nothing
+		music.pause();
 	}
 
 	@Override
 	public void resume() {
-		// do nothing
+		music.play();
 	}
 
 	@Override
@@ -143,5 +140,4 @@ public class MainMenuScreen implements Screen {
 		stage.dispose();
 		music.dispose();
 	}
-
 }

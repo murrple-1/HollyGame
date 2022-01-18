@@ -88,7 +88,6 @@ public class Player extends Actor {
 			p.stateTime += delta;
 			return true;
 		}
-		
 	}
 	
 	private static class PlayerSetDirectionAction extends Action {
@@ -108,7 +107,6 @@ public class Player extends Actor {
 			}
 			return true;
 		}
-		
 	}
 	
 	private static class PlayerMoveAction extends Action {
@@ -164,7 +162,6 @@ public class Player extends Actor {
 			player.swordRectangle = null;
 			return true;
 		}
-		
 	}
 	
 	private static class SwordMoveAction extends Action {
@@ -295,5 +292,4 @@ public class Player extends Actor {
 			playerAnimationsHeight = height;
 		}
 	}
-	
 }

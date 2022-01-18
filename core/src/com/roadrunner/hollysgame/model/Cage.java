@@ -79,7 +79,6 @@ public class Cage extends AnimationActor {
 			}
 			return true;
 		}
-		
 	}
 	
 	private static class CheckHealthAction extends Action {

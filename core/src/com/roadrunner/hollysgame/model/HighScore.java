@@ -13,16 +13,13 @@ import com.badlogic.gdx.utils.Json;
 import com.badlogic.gdx.utils.JsonValue;
 
 public class HighScore implements Json.Serializable {
-	
 	public static final String highScoreFilename = "hollysgame_highScore.json";
 	public static final int MaxCount = 5;
 	
 	private String name;
 	private Duration time;
 	
-	public HighScore() {
-		
-	}
+	public HighScore() {}
 	
 	public HighScore(String name, Duration time) {
 		this.name = name;
@@ -88,7 +85,6 @@ public class HighScore implements Json.Serializable {
 	}
 	
 	public static class HighScoreComparator implements Comparator<HighScore> {
-
 		@Override
 		public int compare(HighScore o1, HighScore o2) {
 			if(o1 == o2) {
