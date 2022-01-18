@@ -1,249 +1,250 @@
 
 game.png
+size: 2048, 512
 format: RGBA8888
-filter: Nearest,Nearest
+filter: Nearest, Nearest
 repeat: none
 Button
   rotate: false
-  xy: 966, 698
+  xy: 326, 140
   size: 20, 20
   orig: 20, 20
   offset: 0, 0
   index: -1
 ButtonChecked
   rotate: false
-  xy: 2, 2
+  xy: 348, 162
   size: 20, 20
   orig: 20, 20
   offset: 0, 0
   index: -1
 ButtonDisabled
   rotate: false
-  xy: 236, 238
+  xy: 326, 162
   size: 20, 20
   orig: 20, 20
   offset: 0, 0
   index: -1
 ButtonDown
   rotate: false
-  xy: 484, 342
+  xy: 1742, 484
   size: 20, 20
   orig: 20, 20
   offset: 0, 0
   index: -1
 Cage-1
   rotate: false
-  xy: 2, 208
+  xy: 2, 80
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
 Cage-2
   rotate: false
-  xy: 484, 530
+  xy: 2, 132
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
 Cage-3
   rotate: false
-  xy: 966, 852
+  xy: 54, 132
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
 Cage-4
   rotate: false
-  xy: 2, 156
+  xy: 1448, 454
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
 Enemy-1
   rotate: false
-  xy: 484, 364
+  xy: 1448, 194
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 Enemy-2
   rotate: false
-  xy: 668, 548
+  xy: 2, 2
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 GameBG
   rotate: false
-  xy: 2, 582
+  xy: 2, 184
   size: 480, 320
   orig: 480, 320
   offset: 0, 0
   index: -1
 Heart
   rotate: false
-  xy: 702, 560
+  xy: 1720, 462
   size: 20, 20
   orig: 20, 20
   offset: 0, 0
   index: -1
 HeartEmpty
   rotate: false
-  xy: 966, 676
+  xy: 1720, 484
   size: 20, 20
   orig: 20, 20
   offset: 0, 0
   index: -1
 Hero-stand-d-1
   rotate: false
-  xy: 484, 486
+  xy: 1632, 462
   size: 42, 42
   orig: 42, 42
   offset: 0, 0
   index: -1
 Hero-walk-d-1
   rotate: false
-  xy: 484, 486
+  xy: 1632, 462
   size: 42, 42
   orig: 42, 42
   offset: 0, 0
   index: -1
 Hero-stand-l-1
   rotate: false
-  xy: 536, 538
+  xy: 2, 36
   size: 42, 42
   orig: 42, 42
   offset: 0, 0
   index: -1
 Hero-walk-l-1
   rotate: false
-  xy: 536, 538
+  xy: 2, 36
   size: 42, 42
   orig: 42, 42
   offset: 0, 0
   index: -1
 Hero-stand-r-1
   rotate: false
-  xy: 966, 808
+  xy: 238, 140
   size: 42, 42
   orig: 42, 42
   offset: 0, 0
   index: -1
 Hero-walk-r-1
   rotate: false
-  xy: 966, 808
+  xy: 238, 140
   size: 42, 42
   orig: 42, 42
   offset: 0, 0
   index: -1
 Hero-stand-u-1
   rotate: false
-  xy: 2, 112
+  xy: 1588, 462
   size: 42, 42
   orig: 42, 42
   offset: 0, 0
   index: -1
 Hero-walk-u-1
   rotate: false
-  xy: 2, 112
+  xy: 1588, 462
   size: 42, 42
   orig: 42, 42
   offset: 0, 0
   index: -1
 Hero-swing-d-1
   rotate: false
-  xy: 54, 166
+  xy: 54, 88
   size: 42, 42
   orig: 42, 42
   offset: 0, 0
   index: -1
 Hero-swing-d-2
   rotate: false
-  xy: 104, 216
+  xy: 1448, 228
   size: 42, 42
   orig: 42, 42
   offset: 0, 0
   index: -1
 Hero-swing-l-1
   rotate: false
-  xy: 484, 442
+  xy: 1448, 272
   size: 42, 42
   orig: 42, 42
   offset: 0, 0
   index: -1
 Hero-swing-l-2
   rotate: false
-  xy: 580, 538
+  xy: 1448, 360
   size: 42, 42
   orig: 42, 42
   offset: 0, 0
   index: -1
 Hero-swing-r-1
   rotate: false
-  xy: 966, 764
+  xy: 106, 140
   size: 42, 42
   orig: 42, 42
   offset: 0, 0
   index: -1
 Hero-swing-r-2
   rotate: false
-  xy: 2, 68
+  xy: 282, 140
   size: 42, 42
   orig: 42, 42
   offset: 0, 0
   index: -1
 Hero-swing-u-1
   rotate: false
-  xy: 148, 216
+  xy: 1500, 462
   size: 42, 42
   orig: 42, 42
   offset: 0, 0
   index: -1
 Hero-swing-u-2
   rotate: false
-  xy: 484, 398
+  xy: 194, 140
   size: 42, 42
   orig: 42, 42
   offset: 0, 0
   index: -1
 Hero-walk-d-2
   rotate: false
-  xy: 624, 538
+  xy: 150, 140
   size: 42, 42
   orig: 42, 42
   offset: 0, 0
   index: -1
 Hero-walk-l-2
   rotate: false
-  xy: 966, 720
+  xy: 1676, 462
   size: 42, 42
   orig: 42, 42
   offset: 0, 0
   index: -1
 Hero-walk-r-2
   rotate: false
-  xy: 2, 24
+  xy: 1448, 316
   size: 42, 42
   orig: 42, 42
   offset: 0, 0
   index: -1
 Hero-walk-u-2
   rotate: false
-  xy: 192, 216
+  xy: 1544, 462
   size: 42, 42
   orig: 42, 42
   offset: 0, 0
   index: -1
 HighScore
   rotate: false
-  xy: 2, 260
+  xy: 484, 184
   size: 480, 320
   orig: 480, 320
   offset: 0, 0
   index: -1
 TextBox
   rotate: false
-  xy: 54, 210
+  xy: 1448, 404
   size: 48, 48
   split: 23, 24, 20, 27
   pad: 10, 9, 9, 10
@@ -252,7 +253,7 @@ TextBox
   index: -1
 TitleScreen
   rotate: false
-  xy: 484, 582
+  xy: 966, 184
   size: 480, 320
   orig: 480, 320
   offset: 0, 0
