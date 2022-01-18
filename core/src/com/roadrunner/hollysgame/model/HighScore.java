@@ -7,12 +7,13 @@ import org.joda.time.Duration;
 import org.joda.time.format.PeriodFormatter;
 import org.joda.time.format.PeriodFormatterBuilder;
 
+import com.badlogic.gdx.utils.JsonReader;
+import com.badlogic.gdx.utils.JsonValue;
+import com.badlogic.gdx.utils.JsonWriter;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
-import com.badlogic.gdx.utils.Json;
-import com.badlogic.gdx.utils.JsonValue;
 
-public class HighScore implements Json.Serializable {
+public class HighScore {
 	public static final String highScoreFilename = "hollysgame_highScore.json";
 	public static final int MaxCount = 5;
 	
@@ -34,18 +35,6 @@ public class HighScore implements Json.Serializable {
 		return time;
 	}
 	
-	@Override
-	public void write(Json json) {
-		json.writeValue("name", name);
-		json.writeValue("score", time.getMillis());
-	}
-
-	@Override
-	public void read(Json json, JsonValue jsonData) {
-		name = jsonData.getString("name");
-		time = new Duration(jsonData.getLong("score"));
-	}
-	
 	private static PeriodFormatter formatter = null;
 	
 	public static PeriodFormatter getPeriodFormatter() {
@@ -63,9 +52,15 @@ public class HighScore implements Json.Serializable {
 		if(highScores == null) {
 			FileHandle hsFileHandle = Gdx.files.external(highScoreFilename);
 			if(hsFileHandle.exists()) {
+				highScores = new HighScore[MaxCount];
 				try {
-					Json json = new Json();
-					highScores = json.fromJson(HighScore[].class, hsFileHandle);
+					JsonValue json = new JsonReader().parse(hsFileHandle);
+					for (int i = 0; i < json.size && i < highScores.length; i++) {
+						JsonValue hsValue = json.get(i);
+						if (!hsValue.isNull()) {
+							highScores[i] = new HighScore(hsValue.getString("name"), new Duration(hsValue.getLong("time")));
+						}
+					}
 				} catch (SerializationException e) {
 					highScores = new HighScore[MaxCount];
 				}
@@ -79,8 +74,16 @@ public class HighScore implements Json.Serializable {
 	public static void saveHighScores() {
 		HighScore[] highScores = getHighScores();
 		FileHandle highScoreFileHandle = Gdx.files.external(highScoreFilename);
-		Json json = new Json();
-		String hsJson = json.toJson(highScores, HighScore[].class);
+		JsonValue json = new JsonValue(JsonValue.ValueType.array);
+		for (HighScore hs: highScores) {
+			if (hs != null) {
+				JsonValue hsValue = new JsonValue(JsonValue.ValueType.object);
+				hsValue.addChild("name", new JsonValue(hs.name));
+				hsValue.addChild("time", new JsonValue(hs.time.getMillis()));
+				json.addChild(hsValue);
+			}
+		}
+		String hsJson = json.toJson(JsonWriter.OutputType.json);
 		highScoreFileHandle.writeString(hsJson, false);
 	}
 	
