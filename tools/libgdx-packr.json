@@ -1,0 +1,5 @@
+{
+    "executable": "HollysBattle",
+    "mainclass": "com.roadrunner.hollysgame.desktop.DesktopLauncher",
+    "minimizejre": "hard"
+}
